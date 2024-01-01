@@ -2,12 +2,14 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 
-st.header("Domestic and Foreign Tourist Arrivals report in Uttarakhand (2016-2020)")
-st.image('logo.png',caption=None, width=120, use_column_width=150, clamp=False, channels="RGB", output_format="auto")
+st.header("Data Visualization Projects")
+st.subheader("Visualizing Domestic and Foreign Tourist Arrivals report in Uttarakhand (2016-2020)")
+
+#st.image('logo.png',caption=None, width=120, use_column_width=150, clamp=False, channels="RGB", output_format="auto")
 dff = pd.read_csv('data.csv')
 dff  
 
-
+st.sidebar.image('logo.png',caption=None, width=120, use_column_width=150, clamp=False, channels="RGB", output_format="auto")
 a = st.sidebar.radio('Select Chart Type : ', ['Bar Plot', 'Line Plot', 'Scatter Plot', 'Pie Chart'])
 df = pd.read_csv("data.csv")
 
